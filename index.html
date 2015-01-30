@@ -10,5 +10,26 @@
 </head>
 <body>
 <h1>Look at the console!</h1>
+<p>You will see there is a <code>Unexpected token <</code> and a failed request to sentry.</p>
+<p>Check the failed request to sentry. It will contain a body like this:</p>
+<pre>
+  {
+     "project":"1",
+     "logger":"javascript",
+     "platform":"javascript",
+     "request":{
+        "url":"http://raven-undefined.divshot.io/",
+        "headers":{
+           "User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+        }
+     },
+     "exception":{
+        "value":"undefined"
+     },
+     "message":"undefined",
+     "event_id":"73953c68cfce4a488b2ddc438a56c87e"
+  }
+</pre>
+<p>Notice the value and message of <code>undefined</code></p>
 </body>
 </html>
